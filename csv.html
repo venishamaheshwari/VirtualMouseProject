@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-image: url('/Users/venishamaheshwari/Downloads/sae.jpeg'); /* Ensure this image is in the same directory */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label, input, select, textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            display: inline;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>STUDENT REGISTRATION FORM</h2>
+        <form>
+            <label>FIRST NAME:</label>
+            <input type="text" maxlength="30">
+            
+            <label>MIDDLE NAME:</label>
+            <input type="text" maxlength="30">
+            
+            <label>LAST NAME:</label>
+            <input type="text" maxlength="30">
+            
+            <label>DATE OF BIRTH:</label>
+            <select><option>Day</option></select>
+            <select><option>Month</option></select>
+            <select><option>Year</option></select>
+            
+            <label>EMAIL ID:</label>
+            <input type="email">
+            
+            <label>MOBILE NUMBER:</label>
+            <input type="text" maxlength="10">
+            
+            <label>GENDER:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            
+            <label>ADDRESS:</label>
+            <textarea></textarea>
+            
+            <label>CITY:</label>
+            <input type="text" maxlength="30">
+            
+            <label>PIN CODE:</label>
+            <input type="text" maxlength="6">
+            
+            <label>STATE:</label>
+            <input type="text" maxlength="30">
+            
+            <label>COUNTRY:</label>
+            <input type="text" value="India" readonly>
+            
+            <label>HOBBIES:</label>
+            <input type="checkbox"> Coding
+            <input type="checkbox"> Blog-Writing
+            <input type="checkbox"> Hacking
+            <input type="checkbox"> Cricket
+            <input type="checkbox"> Others <input type="text">
+            
+            <label>QUALIFICATION:</label>
+            <table>
+                <tr>
+                    <th>Sl.No</th><th>Examination</th><th>Board</th><th>Percentage</th><th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td><td>Class X</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>2</td><td>Class XII</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>3</td><td>Graduation</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>4</td><td>Masters</td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+                </tr>
+            </table>
+            
+            <label>COURSES APPLIED FOR:</label>
+            <input type="radio" name="course"> B.Tech
+            <input type="radio" name="course"> M.Tech
+            <input type="radio" name="course"> PhD
+            <input type="radio" name="course"> MS
+            
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
